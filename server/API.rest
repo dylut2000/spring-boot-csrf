@@ -1,3 +1,16 @@
 ### Variables
-@SERVER = http://localhost:8080
+@SERVER = http://localhost:8080/
 
+### Check server
+GET {{SERVER}}
+
+### Get messages
+GET {{SERVER}}messages
+
+### Add new message
+POST {{SERVER}}messages
+Content-Type: application/json
+
+{
+  "message": "hi there..."
+}
